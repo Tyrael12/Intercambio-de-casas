@@ -1,0 +1,55 @@
+h1 {
+	font-family: Rage Italic;
+	text-align: center;
+	display:inline;
+	font-size: 300%;
+	margin-top: 40%;
+}
+.titulo{
+	background-color: transparent; 
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+.fondo {
+		height: 100%;
+        background: url(images.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+}
+.caja {
+	background-color: red;
+	width: 500px;
+	height: 500px;
+}
+.slide{
+   border: 10px solid black;
+   margin-right: 3%;
+   width: 30%;
+   height: 280px;
+   display:inline-block;
+   position: relative;
+   float: right;
+ }
+section{
+   border: 10px solid black;
+   margin-left: 3%;
+   width: 30%;
+   height: 280px;
+   display:inline-block;
+   position: relative;
+   float: left;
+ }
+ section .slide img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+.slide img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+.slide .img2, .slide .img3, .slide .img4, .slide .img5 {
+   display: none;
+}
+
