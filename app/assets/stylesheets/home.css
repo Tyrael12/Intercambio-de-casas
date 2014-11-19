@@ -1,6 +1,29 @@
+.boton1{
+   font-size: 200%;
+   font-family: Rage Italic;
+   color: white;
+   background-color: transparent;
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   float: left;
+   margin: 3%;
+}
+.boton{
+   font-size: 200%;
+   font-family: Rage Italic;
+   color: white;
+   background-color: transparent;
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   float: right;
+   margin: 3%;
+   margin-left: 55%;
+}
 h1 {
    color: #FFFFFF;
-	font-family: Rage Italic, red;
+	font-family: Rage Italic;
 	text-align: center;
 	display:inline;
 	font-size: 300%;
