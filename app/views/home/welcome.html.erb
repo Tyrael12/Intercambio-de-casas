@@ -1,6 +1,10 @@
 <body class="fondo">
-<%= link_to (submit_tag "Identificate", class: "boton"), 'http://localhost:3000/users/login' %>
-<%= link_to (submit_tag "Registrate", class: "boton1"), 'http://localhost:3000/users/signup' %>
+<% if user_signed_in? %>
+<%= link_to (submit_tag "Salir", class: "boton2"), destroy_user_session_path, method: "DELETE" %>
+<% else %>
+<%= link_to (submit_tag "Identificate", class: "boton"), new_user_session_path %>
+<%= link_to (submit_tag "Registrate", class: "boton1"), new_user_registration_path %>
+<% end %>
 <div class="slide" id="slide2">  
     <img class="img1" src="/home/images (4).jpg" />
     <img class="img2" src="/home/images (2).jpg" />
