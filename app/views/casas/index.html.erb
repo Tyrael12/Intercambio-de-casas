@@ -1,0 +1,5 @@
+<% @casas.each do |casa| %>
+<%= casa.ciudad %>
+<%= casa.direccion %>
+<% end %>
+<%= link_to 'New Casa', new_casa_path %>

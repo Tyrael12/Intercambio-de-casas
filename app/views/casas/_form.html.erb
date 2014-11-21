@@ -1,0 +1,25 @@
+<%= form_for(@casa) do |f| %>
+  <% if @casa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@casa.errors.count, "error") %> prohibited this casa from being saved:</h2>
+
+      <ul>
+      <% @casa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ciudad %><br>
+    <%= f.text_field :ciudad %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
