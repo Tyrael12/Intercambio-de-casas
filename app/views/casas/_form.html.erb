@@ -1,3 +1,4 @@
+<body class="fondomiespacio">
 <%= form_for(@casa) do |f| %>
   <% if @casa.errors.any? %>
     <div id="error_explanation">
@@ -12,14 +13,35 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :ciudad %><br>
+    <%= f.label :localidad %><br>
     <%= f.text_field :ciudad %>
   </div>
   <div class="field">
     <%= f.label :direccion %><br>
     <%= f.text_field :direccion %>
   </div>
+    <div class="field">
+    <%= f.label :provincia %><br>
+    <%= f.text_field :provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :pais %><br>
+    <%= f.text_field :pais %>
+  </div>
+    <div class="field">
+    <%= f.label :situacion %><br>
+    <%= f.text_field :situacion %>
+  </div>
+  <div class="field">
+    <%= f.label :fechas %><br>
+    <%= f.text_field :fechas %>
+  </div>
+   <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</body>

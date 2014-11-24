@@ -1,5 +1,6 @@
 <body class="fondo">
 <% if user_signed_in? %>
+<%= link_to (submit_tag "Mi Area", class: "boton3"), new_casa_path %>
 <%= link_to (submit_tag "Salir", class: "boton2"), destroy_user_session_path, method: "DELETE" %>
 <% else %>
 <%= link_to (submit_tag "Identificate", class: "boton"), new_user_session_path %>

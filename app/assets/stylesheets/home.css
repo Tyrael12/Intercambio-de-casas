@@ -31,8 +31,20 @@
    border-radius: 100%;
    float: center;
    margin: 3%;
-   margin-left: 44%;
-   margin-right: 44%;
+   margin-right: 34%;
+   float: right;
+}
+.boton3{
+   font-size: 200%;
+   font-family: Rage Italic;
+   color: white;
+   background-color: transparent;
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   float: center;
+   margin: 3%;
+   margin-left: 34%;
 }
 h1 {
    color: #FFFFFF;

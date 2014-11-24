@@ -1,5 +1,12 @@
 <% @casas.each do |casa| %>
 <%= casa.ciudad %>
 <%= casa.direccion %>
+<%= casa.provincia %>
+<%= casa.pais %>
+<%= casa.situacion %>
+<%= casa.fechas %>
+<%= casa.descripcion %>
+<%= link_to 'Destroy', casa_path(casa),
+                    method: :delete, data: { confirm: '¿Estas seguro?' } %>
 <% end %>
 <%= link_to 'New Casa', new_casa_path %>

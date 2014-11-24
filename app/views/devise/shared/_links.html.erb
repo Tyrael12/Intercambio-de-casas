@@ -1,13 +1,13 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to "identificate", new_session_path(resource_name) %><br />
+  <%= link_to (submit_tag "Identificate", class: "orden2"), new_session_path(resource_name) %><br />
 <% end -%>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-  <%= link_to "regístrate", new_registration_path(resource_name) %><br />
+  <%= link_to (submit_tag "Registrate", class: "orden1"), new_registration_path(resource_name) %><br />
 <% end -%>
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-  <%= link_to "¿olvidaste la contraseña?", new_password_path(resource_name) %><br />
+  <%= link_to (submit_tag "¿olvidaste la contraseña?", class: "orden"), new_password_path(resource_name) %><br />
 <% end -%>
 
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>

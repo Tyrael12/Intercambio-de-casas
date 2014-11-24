@@ -1,6 +1,12 @@
 class CasasController < ApplicationController
 before_action :authenticate_user!
-	def index
+def destroy
+  @casa = Casa.find(params[:id])
+  @casa.destroy
+ 
+  redirect_to casas_path
+end
+  def index
     	@casas = current_user.casas
 	end
 	def new
@@ -17,6 +23,7 @@ before_action :authenticate_user!
       end
     private
     def casa_params
-      params.require(:casa).permit(:ciudad, :direccion)
+      params.require(:casa).permit(:ciudad, :direccion, :provincia, :pais, :situacion, :fechas, :descripcion)
     end
+ 
 end

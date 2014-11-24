@@ -1,25 +1,25 @@
 <body class="fondoregistrarse"> 
-<h2>Regístrate</h2>
+<h2 class="titulo1">Regístrate</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="barra5 field">
 <%= f.label :nombre %><br />
 <%= f.text_field :name, autofocus: true %>
 </div>
 
-<div class="field">
+<div class="barra6 field">
 <%= f.label :apellido %><br />
 <%= f.text_field :lastname, autofocus: true %>
 </div>
 
-  <div class="field">
+  <div class="barra1 field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="field">
+  <div class="barra2 field">
     <%= f.label :contraseña %>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> carácteres minimo )</em>
@@ -27,13 +27,13 @@
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div class="barra2 field">
     <%= f.label :confirmacion_de_contraseña %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Regístrate" %>
+  <div class="barra4 actions">
+    <%= f.submit "Regístrado" %>
   </div>
 <% end %>
 
