@@ -2,6 +2,11 @@
 <h2 class="titulo1">Identificate</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+ <div class="form-group">
+        <%= f.label :avatar %>
+            <%= f.file_field :avatar, autofocus: true %>
+        </div>
+
   <div class="barra1 field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
