@@ -1,0 +1,17 @@
+<ul>
+<li><h2 class="info">Localidad</h2> <p class="datos"><%= @casa.ciudad %></p></li>
+<li><h2 class="info">Direccion</h2> <p class="datos"><%= @casa.direccion %></p></li>
+<li><h2 class="info">Provincia</h2> <p class="datos"><%= @casa.provincia %></p></li>
+<li><h2 class="info">Pais</h2> <p class="datos"><%= @casa.pais %></p></li>
+<li><h2 class="info">Situacion</h2> <p class="datos"><%= @casa.situacion %></p></li>
+<li><h2 class="info">Fechas</h2> <p class="datos"><%= @casa.fechas %></p></li>
+<li><h2 class="info">descripcion</h2> <p class="datos"><%= @casa.descripcion %></p></li>
+<div class="mapa" id="mapa"></div>
+
+<script type="text/javascript">
+  var latitude = <%= @casa.latitude %>;
+  var longitude = <%= @casa.longitude %>;
+  showlocation();
+</script>
+
+</ul>

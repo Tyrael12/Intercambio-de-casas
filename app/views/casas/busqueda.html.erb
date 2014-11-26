@@ -1,4 +1,4 @@
-<% @casas.each do |casa| %>
+<% @busq.each do |casa| %>
 <ul>
 <li><h2 class="info">Localidad</h2> <p class="datos"><%= casa.ciudad %></p></li>
 <li><h2 class="info">Direccion</h2> <p class="datos"><%= casa.direccion %></p></li>
@@ -7,11 +7,7 @@
 <li><h2 class="info">Situacion</h2> <p class="datos"><%= casa.situacion %></p></li>
 <li><h2 class="info">Fechas</h2> <p class="datos"><%= casa.fechas %></p></li>
 <li><h2 class="info">descripcion</h2> <p class="datos"><%= casa.descripcion %></p></li>
-<li><h2 class="info">address</h2> <p class="datos"><%= casa.address %></p></li>
-<li><h2 class="info">latitud</h2> <p class="datos"><%= casa.latitude %></p></li>
-<li><h2 class="info">longitud</h2> <p class="datos"><%= casa.longitude %></p></li>
+
+<%= link_to 'Show', casa_path(casa) %>
 </ul>
-<%= link_to 'Destroy', casa_path(casa),
-                    method: :delete, data: { confirm: '¿Estas seguro?' } %>
 <% end %>
-<%= link_to 'New Casa', new_casa_path %>

@@ -1,5 +1,5 @@
 <body class="fondo">
-
+<div id="mapa"></div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
             <li><%= link_to 'Posts', '#' %></li>
@@ -14,9 +14,9 @@
             <% end %>
         </ul>
     </div>
-
+<%= @busq %>
 <% if user_signed_in? %>
-<%= link_to (submit_tag "Mi Area", class: "boton3"), new_casa_path %>
+<%= link_to (submit_tag "Mi Area", class: "boton3"), casas_path %>
 <%= link_to (submit_tag "Salir", class: "boton2"), destroy_user_session_path, method: "DELETE" %>
 <% else %>
 <%= link_to (submit_tag "Identificate", class: "boton"), new_user_session_path %>
@@ -41,5 +41,11 @@
     <div class=titulo>
 		<h1><p>Intercambia</p> <p>tu Casa de</p> <p>Vacaciones</p></h1>
 	</div>
+<%= form_tag('/busqueda') do %>
 
+    <%= text_field_tag "ciudad", params[:ciudad] %>
+    <%= submit_tag "Buscar", :name => nil %>
+
+<% end %>
+<%= @busq %>
 </body> 

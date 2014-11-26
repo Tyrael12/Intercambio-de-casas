@@ -87,3 +87,18 @@
     height: 100%;
         background: url(campo.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
+} 
+.info{
+        font-size: 240%;
+    font-family: Rage Italic;
+    color: orange;
+    margin: 0px;
+    display: inline;
+}    
+.datos{
+    font-size: 200%;
+    font-family: Rage Italic;
+    color: green;
+    margin: 0px;
+    display: inline;
+}
