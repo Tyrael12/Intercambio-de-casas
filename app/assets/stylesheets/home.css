@@ -103,3 +103,24 @@ h1 {
    width: 66%;
    
 }
+.round-image-50{
+   text-align: right;
+}
+.botonedit{
+   font-size: 200%;
+   font-family: Rage Italic;
+   color: white;
+   background-color: transparent;
+   width: 95px;
+   height: 45px;
+   border-radius: 25%;
+}
+.busquedas input[type=submit] {
+    background-color: transparent;
+    font-size: 200%;
+    font-family: Rage Italic;
+    color: white;
+    text-align: center;
+    height: 12%;
+    width: 12%;
+}

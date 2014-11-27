@@ -1,3 +1,4 @@
+<body class="fondobusqueda">
 <% @busq.each do |casa| %>
 <ul>
 <li><h2 class="info">Localidad</h2> <p class="datos"><%= casa.ciudad %></p></li>
@@ -8,6 +9,8 @@
 <li><h2 class="info">Fechas</h2> <p class="datos"><%= casa.fechas %></p></li>
 <li><h2 class="info">descripcion</h2> <p class="datos"><%= casa.descripcion %></p></li>
 
-<%= link_to 'Show', casa_path(casa) %>
+<%= link_to (submit_tag "Ubicacion", class: "field"), casa_path(casa) %>
+<%= link_to (submit_tag "Inicio", class: "barra3"), root_path %>
 </ul>
 <% end %>
+</body>

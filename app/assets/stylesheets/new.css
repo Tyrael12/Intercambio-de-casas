@@ -98,7 +98,61 @@
 .datos{
     font-size: 200%;
     font-family: Rage Italic;
-    color: green;
+    color: blue;
     margin: 0px;
     display: inline;
+}
+.form-group{
+    font-size: 200%;
+    font-family: Rage Italic;
+    color: black;
+    text-align: center;
+}.fondoedit{
+    height: 100%;
+        background: url(image.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+}
+.actions  {
+    font-size: 200%;
+    font-family: Rage Italic;
+    color: black;
+    text-align: center;
+}
+.orden3 {
+    border-radius: 25%;
+    background-color: black;
+    font-size: 200%;
+    font-family: Rage Italic;
+    color: white;
+    margin-right: 20%;
+    margin-left: 47%;
+}
+.orden4 {
+      border-radius: 25%;
+    background-color: yellow;
+    font-size: 200%;
+    font-family: Rage Italic;
+    color: black;
+    margin-right: 44%;
+    margin-left: 42%;
+}
+.fondocrear {
+    height: 100%;
+        background: url(imagennn.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+}
+.field {
+    color: yellow;
+    font-size: 200%;
+    font-family: Rage Italic;
+}
+.fondobusqueda {
+    height: 100%;
+        background: url(imagen.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+}
+.fondomapa {
+    height: 100%;
+        background: url(imagenn.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
 }

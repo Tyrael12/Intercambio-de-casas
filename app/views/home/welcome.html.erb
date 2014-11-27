@@ -1,21 +1,14 @@
 <body class="fondo">
-<div id="mapa"></div>
-	<div class="collapse navbar-collapse" id="navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Posts', '#' %></li>
-            <% if current_user %>
-            <li><%= link_to 'Edit Profile',edit_user_registration_path %></li>
-            <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-
-            <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
-
-            <% else %>
-            <li><%= link_to 'Login', new_user_session_path %></li>
-            <% end %>
-        </ul>
-    </div>
-<%= @busq %>
 <% if user_signed_in? %>
+<%= form_tag('/busqueda') do %>
+    <%= text_field_tag "ciudad", params[:ciudad] %>
+    <div class="busquedas">
+    <%= submit_tag "Buscar", :name => nil %></div>
+<% end %>
+
+<div class="round-image-50"><%= link_to (submit_tag "Editar", class: "botonedit"),edit_user_registration_path %>
+    <%= image_tag(current_user.avatar.url(:thumb)) %>
+</div>
 <%= link_to (submit_tag "Mi Area", class: "boton3"), casas_path %>
 <%= link_to (submit_tag "Salir", class: "boton2"), destroy_user_session_path, method: "DELETE" %>
 <% else %>
@@ -41,11 +34,6 @@
     <div class=titulo>
 		<h1><p>Intercambia</p> <p>tu Casa de</p> <p>Vacaciones</p></h1>
 	</div>
-<%= form_tag('/busqueda') do %>
 
-    <%= text_field_tag "ciudad", params[:ciudad] %>
-    <%= submit_tag "Buscar", :name => nil %>
 
-<% end %>
-<%= @busq %>
 </body> 

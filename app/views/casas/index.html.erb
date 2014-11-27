@@ -1,3 +1,4 @@
+<body class="fondocrear">
 <% @casas.each do |casa| %>
 <ul>
 <li><h2 class="info">Localidad</h2> <p class="datos"><%= casa.ciudad %></p></li>
@@ -11,7 +12,9 @@
 <li><h2 class="info">latitud</h2> <p class="datos"><%= casa.latitude %></p></li>
 <li><h2 class="info">longitud</h2> <p class="datos"><%= casa.longitude %></p></li>
 </ul>
-<%= link_to 'Destroy', casa_path(casa),
+<%= link_to (submit_tag "Borrar", class: "barra1"), casa_path(casa),
                     method: :delete, data: { confirm: '¿Estas seguro?' } %>
 <% end %>
-<%= link_to 'New Casa', new_casa_path %>
+<%= link_to (submit_tag "Nueva casa", class: "barra2"), new_casa_path %>
+<%= link_to (submit_tag "Inicio", class: "barra3"), root_path %>
+</body>

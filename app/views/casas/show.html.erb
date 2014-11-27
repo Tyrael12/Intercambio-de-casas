@@ -1,3 +1,4 @@
+<body class="fondomapa">
 <ul>
 <li><h2 class="info">Localidad</h2> <p class="datos"><%= @casa.ciudad %></p></li>
 <li><h2 class="info">Direccion</h2> <p class="datos"><%= @casa.direccion %></p></li>
@@ -7,11 +8,14 @@
 <li><h2 class="info">Fechas</h2> <p class="datos"><%= @casa.fechas %></p></li>
 <li><h2 class="info">descripcion</h2> <p class="datos"><%= @casa.descripcion %></p></li>
 <div class="mapa" id="mapa"></div>
-
+<%= link_to (submit_tag "Inicio", class: "barra3"), root_path %>
+<%= link_to (submit_tag "Atras", class: "barra2"), casas_path %>
 <script type="text/javascript">
   var latitude = <%= @casa.latitude %>;
   var longitude = <%= @casa.longitude %>;
   showlocation();
 </script>
 
+
 </ul>
+</body>
